@@ -31,6 +31,7 @@ response = requests.get(url, header)
 
 selector = parsel.Selector(response.text)
 name = selector.css(".info h1::text").get()  # 获取小说名称
+# name = selector.css(".info h1::attr(helf)").get()  # 可以获取标签里面的属性
 
 # 创建小说名称目录
 if not os.path.exists(name):
