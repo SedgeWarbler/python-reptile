@@ -14,7 +14,7 @@ import time
 options = webdriver.ChromeOptions()
 options.add_experimental_option('detach', True)  # 不自动关闭浏览
 # 这里操作会打开浏览器
-service = Service('../chromedriver.exe')
+service = Service('../工具/chromedriver.exe')
 driver = webdriver.Chrome(service=service, options=options)
 driver.get('https://www.douyin.com/user/MS4wLjABAAAA4N4OrZzTSmCPp8vVAqCeyU215Kav2JgFv2Lfy4DNWRs')
 # driver.execute_script(js)  #可以执行js
