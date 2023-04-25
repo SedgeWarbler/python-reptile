@@ -84,5 +84,5 @@ class bilibili:
         ffmpeg.run(output)
 
 
-bilibili = bilibili("颜值")
+bilibili = bilibili("美女")
 bilibili.video_list()
